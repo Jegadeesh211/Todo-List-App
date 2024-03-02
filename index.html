@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <title>Todo-List-App</title>
+    <script src="https://kit.fontawesome.com/0fa13ff134.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Container -->
+    <div class="container">
+        <div class="mainbox">
+            <div class="firstbox">
+                <div class="homebar" id="homebar">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+                <div class="namebar" id="namebar1" style="display: block;">
+                    <h2 class="nameh2" >Hello Jegadeesh</h2>
+                    <h4>Today you have 29 tasks</h4>
+                </div>
+                <div class="profilepic" id="profilepic">
+                    <img src="./man-avatar-profile-vector-21372076-removebg-preview (3).png"/>
+                </div>
+                
+            </div>
+            <!-- category -->
+            <div class="category" id="category1">
+                <!-- personal -->
+                <div class="personal" id="personalmain"  onclick="myFunction()">
+                    <i class="fa-solid fa-user"></i>
+                    <h3>Personal<br><small>7&nbsp;Tasks</small></h3>
+                </div> 
+                <!-- work -->
+                <div class="work" id="workmain" onclick="myFunction()">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <h3>Work<br><small>4&nbsp;Tasks</small></h3>
+                </div>
+                <!-- shopping -->
+                <div class="shopping" onclick="myFunction()">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <h3>Shopping<br><small>3&nbsp;Tasks</small></h3>
+                </div>
+                 <!-- codeingss -->
+                <div class="coding" onclick="myFunction()">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3>Coding<br><small>4&nbsp;Tasks</small></h3>
+                </div>
+            </div>
+            <div class="newtask" id="plus" onclick="newtaskbar()" style="display: none;">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <!-- taskbar -->
+            <div class="newtaskbar" id="newtaskbar"  style="display: none;">
+                <div id="myDIV" class="header">
+                    <h2 >My To Do List</h2>
+                    <input type="text" id="myInput" placeholder="Title...">
+                    <span onclick="newElement()" class="addBtn">Add</span>
+                  </div>
+                <i class="fa-regular fa-circle-xmark" id="xmark" onclick="xmark()" ></i>
+                
+            </div>
+            <div class="secondboxmain" id="arrow" onclick="arrow()" style="display: none;">
+                <i class="fa-solid fa-arrow-left-long"></i>
+            </div>
+            <div class="secondboxmain2" id="dot" style="display: none;">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <!-- personaltask -->
+            <div class="personaltask" id="personal" style="display: none;">
+                 <img src="./man-avatar-profile-vector-21372076-removebg-preview (3).png"/>
+                 <span class="task">7 &nbsp;Tasks</span>
+                 <h2>Personal</h2>
+                 <div class="personalcheck" >
+                    <ul id="myUL">
+                        <li>Read a chapter of  a book</li>
+                        <li>Writen in a journal</li>
+                        <li>Meditate for 10 minutes</li>
+                        <li>New Task</li>
+                        <li>Read a book</li>
+                      </ul>
+                      
+                </div>
+            </div>
+            
+             <!-- workcheck -->
+             <div class="personaltask" id="work" style="display: none;">
+                <img src="./man-avatar-profile-vector-21372076-removebg-preview (3).png"/>
+                <span class="task">7 &nbsp;Tasks</span>
+                <h2>Work</h2>
+                <div class="personalcheck" >
+                   <ul id="myUL">
+                       <li>Prepare presentation for meeting</li>
+                       <li >Send follow-up emails</li>
+                       <li>Meditate for 10 minutes</li>
+                       <li>New Task</li>
+                       <li>Read a book</li>
+                     </ul>
+                     
+               </div>
+           </div>
+
+            <!-- shopping -->
+
+            <div class="personaltask" id="shopping" style="display: none;">
+                <img src="./man-avatar-profile-vector-21372076-removebg-preview (3).png"/>
+                <span class="task">7 &nbsp;Tasks</span>
+                <h2>Shopping</h2>
+                <div class="personalcheck" >
+                   <ul id="myUL">
+                       <li>Go to market</li>
+                       <li>Buy groceries for the week</li>
+                       <li>Meditate for 10 minutes</li>
+                       <li>New Task</li>
+                       <li>By new Cloths</li>
+                     </ul>
+
+               </div>
+           </div>
+
+           <!-- coding -->
+           <div class="personaltask" id="coding" style="display: none;">
+            <img src="./man-avatar-profile-vector-21372076-removebg-preview (3).png"/>
+            <span class="task">7 &nbsp;Tasks</span>
+            <h2>Coding</h2>
+            <div class="personalcheck" >
+               <ul id="myUL">
+                   <li>Html</li>
+                   <li>Css</li>
+                   <li>Bootstrab</li>
+                   <li>Javascript</li>
+                   <li>React Js</li>
+                 </ul>
+           </div>
+       </div>
+
+    </div>
+    <script src="./java.js"></script>
+</body>
+</html>
